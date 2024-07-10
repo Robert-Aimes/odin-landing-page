@@ -1,0 +1,17 @@
+.header {
+    background-color: #1F2937;
+}
+.header h3, a {
+    color: white;
+}
+
+.intro {
+    background-color: #1F2937; 
+}
+
+.intro h1, p {
+    color: white;
+}
+.footer {
+    background-color: #1F2937;
+}

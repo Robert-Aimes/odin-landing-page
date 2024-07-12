@@ -18,10 +18,6 @@ body, html {
 .header {
     background-color: #1F2937;
     color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
 }
 
 .header, .intro, .center, .quotesection, .signup, .footer {
@@ -29,14 +25,14 @@ body, html {
 
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .header .link {
-    margin-left: 10px;
+    display: flex;
+    margin-right: 10px;
+    gap: 10px;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: end;
 }
 
 .intro img, .center img {
@@ -56,13 +52,6 @@ body, html {
     display: flex;
 }
 
-.signup button {
-    color: #3882F6;
-}
-
-.signup {
-    background-color: #3882F6;
-}
 
 .intro img, .center img {
     width: 100%;
@@ -92,4 +81,33 @@ body, html {
 .imagedescription {
     text-align: center;
     margin-top: 10px;
+}
+
+.footer {
+    background-color: #1F2937;
+    color: white;
+    padding: 10px 0;
+}
+
+.footer p {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.signup button {
+    color: #3882F6;
+    display: flex;
+    justify-content: end;
+}
+
+.signuptext {
+    background-color: #3882F6;
+    border-radius: 10px;
+    width: 600px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+
 }

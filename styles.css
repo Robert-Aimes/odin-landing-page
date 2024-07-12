@@ -1,9 +1,18 @@
-/* Container for centering content */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px; /* Adjust as needed */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;  /* Add padding to the left and right */
+     
+}
+
 
 /* Header styles */
 .header {
@@ -15,64 +24,36 @@
     padding: 10px 0;
 }
 
-.header h3 {
-    margin-right: auto;
+.header, .intro, .center, .quotesection, .signup, .footer {
+    width: 100%; /* Make the sections take full width of the container */
+
 }
 
-.header a {
-    color: white;
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.link {
+.header .link {
     margin-left: 10px;
-    padding: 10px;
 }
 
-/* Intro section styles */
+.intro img, .center img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.imagedescription {
+    text-align: center;
+    margin-top: 10px;
+}
+
 .intro {
     background-color: #1F2937;
     color: white;
-    padding: 40px 0;
-}
-
-/* Center section styles */
-.center {
-    background-color: #f5f5f5; /* Example background color */
-    padding: 40px 0;
-    display:flex;
-    flex-direction: column;
-}
-
-/* Quote section styles */
-.quotesection {
-    background-color: #E5E7EB;
-    color: #1F2937;
-    padding: 40px 0;
-}
-
-.quotesection p {
-    font-size: 36px;
-    font-style: italic;
-    font-weight: 300;
-}
-
-/* Signup section styles */
-.signup {
-    background-color: #f5f5f5; /* Example background color */
-    padding: 40px 0;
-}
-
-/* Footer styles */
-.footer {
-    background-color: #1F2937;
-    color: white;
-    padding: 10px 0;
-}
-
-.footer .container p {
     display: flex;
-    justify-content: center;
-
 }
 
 .signup button {
@@ -83,10 +64,32 @@
     background-color: #3882F6;
 }
 
-.center .container img {
+.intro img, .center img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px; /* Add space between the images */
+}
+
+.image-container {
+    flex: 1 1 150px;
+    max-width: 150px;
+    text-align: center;
+}
+
+.center img {
     border-radius: 10px;
     width: 150px;
     height: 150px;
-    
 }
 
+.imagedescription {
+    text-align: center;
+    margin-top: 10px;
+}

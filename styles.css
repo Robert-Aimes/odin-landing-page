@@ -4,59 +4,67 @@ body, html {
     box-sizing: border-box;
 }
 
+/* Container styles */
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    padding: 0;  /* Add padding to the left and right */
-     
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 0 20px;  /* Add padding to the left and right */
+    max-width: 1200px; /* Set a max-width for the container */
 }
-
 
 /* Header styles */
 .header {
     background-color: #1F2937;
     color: white;
+    width: 100%;
+    padding: 20px 0;
 }
 
-.header, .intro, .center, .quotesection, .signup, .footer {
-    width: 100%; /* Make the sections take full width of the container */
-
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
 
 .header .link {
     display: flex;
-    margin-right: 10px;
     gap: 10px;
-    justify-content: flex-end;
-    flex-direction: row;
-    align-items: end;
 }
 
-.intro img, .center img {
-    width: 100%;
-    height: auto;
-    display: block;
+.header .link a {
+    color: white;
+    text-decoration: none;
 }
 
-.imagedescription {
-    text-align: center;
-    margin-top: 10px;
-}
-
+/* Intro styles */
 .intro {
     background-color: #1F2937;
     color: white;
-    display: flex;
+    padding: 20px 0;
 }
 
+.intro .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
-.intro img, .center img {
+.intro img {
     width: 100%;
     height: auto;
     display: block;
+}
+
+/* Center styles */
+.center {
+    padding: 20px 0;
+}
+
+.center .container {
+    text-align: center;
 }
 
 .image-row {
@@ -83,31 +91,50 @@ body, html {
     margin-top: 10px;
 }
 
-.footer {
-    background-color: #1F2937;
-    color: white;
-    padding: 10px 0;
+/* Quotesection styles */
+.quotesection {
+    padding: 20px 0;
+    text-align: center;
 }
 
-.footer p {
+/* Signup section styles */
+.whiteareasignup {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.whiteareasignup .container {
     display: flex;
-    justify-content: center;
-
+    flex-direction: column;
+    align-items: center;
 }
 
-
-.signup button {
-    color: #3882F6;
-    display: flex;
-    justify-content: end;
-}
 
 .signuptext {
     background-color: #3882F6;
     border-radius: 10px;
-    width: 600px;
-    height: 100px;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: row;
+}
 
+.signuptext h2 p {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup button {
+    color: #3882F6;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #1F2937;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
 }

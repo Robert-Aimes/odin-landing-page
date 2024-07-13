@@ -22,20 +22,29 @@ body, html {
     padding: 20px 0;
 }
 
+
 .header .container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.header h3 {
+    margin: 0;
+    padding: 0;
 }
 
 .header .link {
     display: flex;
     gap: 10px;
+    margin-left: auto;
 }
 
-.header .link a {
+.header .link {
     color: white;
     text-decoration: none;
+    
+    
 }
 
 /* Intro styles */

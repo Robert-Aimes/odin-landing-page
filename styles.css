@@ -27,11 +27,14 @@ body, html {
     display: flex;
     align-items: flex-start;
     flex-direction: row;
+    margin-bottom: 30px;
 }
 
 .header h3 {
     margin: 0;
     padding: 0;
+    font-size: 24px;
+
 }
 
 .header .link {
@@ -50,12 +53,37 @@ body, html {
 .intro {
     background-color: #1F2937;
     color: white;
-    padding: 20px 0;
+    padding: 50px 0;
+    
 }
 
 .intro .container {
     display: flex;
     flex-direction: row;
+}
+.intro .left-portion h1{
+    color: #F9FAF8;
+    font-weight: bold;
+    font-size: 48px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    
+}
+
+.intro p {
+    margin-top: 0px;
+}
+
+.intro button {
+    height: 40px;
+    width: 120px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #3882f6;
+    color: #e5e7eb;
+    border: none;
+    border-radius: 8px;
+    margin-top: 12px;
 }
 
 .intro .cover-image {
@@ -91,6 +119,7 @@ body, html {
     border-radius: 10px;
     width: 150px;
     height: 150px;
+    border: 5px solid #3882f6;
 }
 
 .imagedescription {
@@ -102,6 +131,7 @@ body, html {
 .quotesection {
     padding: 20px 0;
     text-align: center;
+    background-color: #E5E7EB;
 }
 
 /* Signup section styles */
@@ -134,8 +164,16 @@ body, html {
     flex-direction: column;
 }
 
-.signup button {
-    color: #3882F6;
+.signuptext button {
+    height: 40px;
+    width: 120px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #3882f6;
+    color: #e5e7eb;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    margin-top: 12px;
 }
 
 /* Footer styles */
@@ -144,4 +182,8 @@ body, html {
     color: white;
     padding: 10px 0;
     text-align: center;
+    margin-bottom: 100px;
+
 }
+
+

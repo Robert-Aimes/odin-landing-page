@@ -44,7 +44,6 @@ body, html {
     color: white;
     text-decoration: none;
     
-    
 }
 
 /* Intro styles */
@@ -56,15 +55,14 @@ body, html {
 
 .intro .container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    flex-direction: row;
 }
 
-.intro img {
+.intro .cover-image {
     width: 100%;
     height: auto;
-    display: block;
+    display: flex;
+    justify-content: flex-end;
 }
 
 /* Center styles */

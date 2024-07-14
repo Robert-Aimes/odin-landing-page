@@ -148,32 +148,39 @@ body, html {
     margin-top: 0%;
 }
 
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Signup section styles */
 .whiteareasignup {
-    padding: 20px 0;
+    padding: 40px 0;
     text-align: center;
 }
 
 .whiteareasignup .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row; /* Change to row to align elements horizontally */
     align-items: center;
+    justify-content: space-between; /* Space out items to use full width */
     background-color: #3882F6;
-    border-radius: 20px;
-    padding: 10px;
-    width: 100%;
-    max-width: 600px;
-    text-align: center;
-    margin: 0 auto 20px; /* Centers horizontally and adds bottom margin */
+    border-radius: 10px;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 20px;
     box-sizing: border-box; /* Ensures padding and border are included in the total width/height */
 }
 
 .signuptext {
     display: flex;
     flex-direction: column;
-    gap: 0px; /* Ensures no gap between the elements */
-    margin: 0; /* Removes any default margin */
-    justify-content: center;
+    align-items: flex-start; /* Align items to start (left) */
+    gap: 0; /* No space between the elements */
+    margin-left: 50px; 
+    color: white;
+    padding: 20px;
 }
 
 .signuptext > * {
@@ -190,8 +197,10 @@ body, html {
     color: #e5e7eb;
     border: 2px solid #e5e7eb;
     border-radius: 8px;
-    margin-top: 12px;
+    margin-left: auto; /* Pushes the button to the far right */
+    margin-right: 50px;
 }
+
 
 /* Footer styles */
 .footer {

@@ -147,24 +147,35 @@ body, html {
 }
 
 
-.signuptext {
+.whiteareasignup .container {
     background-color: #3882F6;
-    border-radius: 10px;
-    padding: 20px;
+    border-radius: 20px;
+    padding: 10px;
     width: 100%;
     max-width: 600px;
     text-align: center;
-    margin-bottom: 20px;
+    margin: 0 auto 20px; /* Centers horizontally and adds bottom margin */
+    box-sizing: border-box; /* Ensures padding and border are included in the total width/height */
+    display: block; /* Changes display property to block for centering */
     display: flex;
     flex-direction: row;
 }
 
-.signuptext h2 p {
+
+.signuptext {
     display: flex;
     flex-direction: column;
+    gap: 0px; /* Ensures no gap between the elements */
+    margin: 0; /* Removes any default margin */
+    justify-content: center;
 }
 
-.signuptext button {
+.signuptext > * {
+    margin: 0; /* Removes margin from the child elements */
+    padding: 0; /* Removes padding from the child elements */
+}
+
+.whiteareasignup .container button {
     height: 40px;
     width: 120px;
     font-size: 16px;
@@ -176,6 +187,11 @@ body, html {
     margin-top: 12px;
 }
 
+.whiteareasignup .container {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* Footer styles */
 .footer {
     background-color: #1F2937;
@@ -185,5 +201,3 @@ body, html {
     margin-bottom: 100px;
 
 }
-
-
